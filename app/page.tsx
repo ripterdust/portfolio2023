@@ -1,18 +1,20 @@
+'use client';
 import React from 'react';
-import Card from '../components/Card';
+import Card from '@/components/Card';
 import {cards} from './cards';
-import {CardInterface} from '@/interfaces/cardList.interface';
 
 export default function Home() {
   return (
     <React.Fragment>
+      asd
       <div className="cards">
-        {cards.map((card: CardInterface, key) => {
-          const {component} = card;
+        {cards.map((card, key) => {
+          const {component, classes} = card;
+
           const Component = () => component;
 
           return (
-            <Card key={key}>
+            <Card key={key} keyName={key} classes={classes}>
               <Component />
             </Card>
           );

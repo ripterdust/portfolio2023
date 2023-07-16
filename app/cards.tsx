@@ -17,6 +17,7 @@ export const cards: CardInterface[] = [
       <a href="" target="_blank">
         <Image alt="image" src="/download.png" width={100} height={100} />
       </a>
-    )
+    ),
+    classes: 'link'
   }
 ];

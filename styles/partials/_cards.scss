@@ -1,4 +1,44 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(25px, 200px);
+  gap: 1em;
+  min-height: 100vh;
+
+  .card {
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:first-child {
+      background: #8e44ad;
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
+      color: white;
+      .title {
+        font-size: 30px;
+        margin: 0.5em;
+      }
+    }
+  }
+
+  .link {
+    padding: 0;
+
+    a {
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
