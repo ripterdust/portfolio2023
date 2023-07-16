@@ -5,6 +5,18 @@ import Image from 'next/image';
 
 export const cards: CardInterface[] = [
   {
+    component: <></>
+  },
+  {component: <Clock />, classes: 'clock'},
+  {
+    component: (
+      <a href="" target="_blank">
+        <Image alt="image" src="/linkedin.png" width={100} height={100} />
+      </a>
+    ),
+    classes: 'link'
+  },
+  {
     component: (
       <div className="vertical">
         <div>Age</div>
@@ -12,14 +24,5 @@ export const cards: CardInterface[] = [
         <div>Years old</div>
       </div>
     )
-  },
-  {component: <Clock />},
-  {
-    component: (
-      <a href="" target="_blank">
-        <Image alt="image" src="/download.png" width={100} height={100} />
-      </a>
-    ),
-    classes: 'link'
   }
 ];
