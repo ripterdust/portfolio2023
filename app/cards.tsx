@@ -1,3 +1,4 @@
+import Clock from '@/components/Clock';
 import {DateHelpers} from '@/helpers/date';
 import {CardInterface} from '@/interfaces/cardList.interface';
 import Image from 'next/image';
@@ -12,6 +13,7 @@ export const cards: CardInterface[] = [
       </div>
     )
   },
+  {component: <Clock />},
   {
     component: (
       <a href="" target="_blank">

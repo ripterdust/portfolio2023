@@ -14,7 +14,7 @@ const Card = ({children, keyName, classes}: CardProps) => {
   const props = {
     initial: {opacity: 0, scale: 0.5},
     animate: {opacity: 0.96, scale: 1},
-    delate: {delay: 0 + keyBasedDelay},
+    transition: {delay: 0 + keyBasedDelay},
     whileHover: {scale: 1.05, opacity: 1},
     whileTap: {scale: 0.95},
     className: `card ${classes}`
